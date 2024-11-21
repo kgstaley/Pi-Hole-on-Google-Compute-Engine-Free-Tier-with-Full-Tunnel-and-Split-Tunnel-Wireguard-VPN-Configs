@@ -133,6 +133,13 @@ sudo wg set wg0 peer txUZ0iqCyu69qQFq08U420hOp3/A4lYtrHVrJrAYBys= remove
 
 Replace `txUZ0iqCyu69qQFq08U420hOp3/A4lYtrHVrJrAYBys=` in the command above with the appropriate **peer:** you wish to delete on your server.
 
+## Regenerate QR code for a given client
+
+```bash
+sudo cat /root/<CLIENT_NAME> | qrencode -t ansiutf8 -l L
+# sudo cat /root/wg0-client-13.conf | qrencode -t ansiutf8 -l L
+```
+
 ## Contributions Welcome
 
 If there is something that can be done better, or if this documentation can be improved in any way, please submit a Pull Request with your fixes or edits.
